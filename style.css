@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Biru muda cerah */
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #228b22; /* Hijau Islami */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #90ee90; /* Hijau muda */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav button {
+    background-color: #32cd32; /* Hijau cerah */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px; /* Bulat menarik */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s; /* Efek hover */
+}
+
+nav button:hover {
+    background-color: #228b22; /* Gelap saat di-hover */
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page.active {
+    display: block; /* Hanya halaman aktif yang muncul */
+}
+
+.page h2 {
+    color: #228b22;
+    font-size: 22px;
+}
+
+.page ol, .page ul {
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.gambar-menarik {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Bayangan untuk efek 3D */
+}
+
+#quiz button {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+}
+
+footer {
+    background-color: #228b22;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav button {
+        width: 80%;
+    }
+}

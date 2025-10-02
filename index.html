@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Fiqih MTS - Belajar Seru!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 Aplikasi Fiqih MTS 🌟</h1>
+        <p>Belajar fiqih dengan cara menyenangkan! Pilih menu di bawah.</p>
+    </header>
+
+    <nav>
+        <button onclick="showPage('home')">Beranda</button>
+        <button onclick="showPage('shalat')">Rukun Shalat</button>
+        <button onclick="showPage('wudhu')">Cara Wudhu</button>
+        <button onclick="showPage('puasa')">Hukum Puasa</button>
+        <button onclick="showPage('quiz')">Quiz Seru</button>
+    </nav>
+
+    <main id="content">
+        <!-- Halaman Beranda -->
+        <div id="home" class="page active">
+            <h2>Selamat Datang!</h2>
+            <p>Aplikasi ini membantumu belajar fiqih untuk MTS. Materi disajikan dengan gambar dan penjelasan sederhana. Coba klik menu untuk mulai!</p>
+            <img src="https://via.placeholder.com/300x200?text=Gambar+Fiqih" alt="Gambar Ilustrasi Fiqih" class="gambar-menarik">
+        </div>
+
+        <!-- Halaman Rukun Shalat -->
+        <div id="shalat" class="page">
+            <h2>Rukun Shalat (7 Rukun Utama)</h2>
+            <ol>
+                <li>Niat shalat.</li>
+                <li>Takbiratul ihram.</li>
+                <li>Qiyam (berdiri).</li>
+                <li>Rukuk.</li>
+                <li>I'tidal (bangun dari rukuk).</li>
+                <li>Sujud.</li>
+                <li>Duduk di antara dua sujud.</li>
+                <li>Duduk tasyahud akhir.</li>
+                <li>Salam.</li>
+            </ol>
+            <p>Sumber: Buku Fiqih Kelas VII MTS. Praktikkan dengan benar ya!</p>
+            <img src="https://via.placeholder.com/300x200?text=Rukun+Shalat" alt="Ilustrasi Shalat" class="gambar-menarik">
+        </div>
+
+        <!-- Halaman Cara Wudhu -->
+        <div id="wudhu" class="page">
+            <h2>Cara Wudhu yang Benar (6 Farz)</h2>
+            <ul>
+                <li>Niat dalam hati.</li>
+                <li>Membasuh wajah.</li>
+                <li>Membasuh kedua tangan hingga siku.</li>
+                <li>Mengusap kepala.</li>
+                <li>Membasuh kedua kaki hingga mata kaki.</li>
+                <li>Urutan dan mengerjakannya bersambung.</li>
+            </ul>
+            <p>Ingat: Wudhu membersihkan hati dan tubuh. Coba latihan di rumah!</p>
+            <img src="https://via.placeholder.com/300x200?text=Cara+Wudhu" alt="Ilustrasi Wudhu" class="gambar-menarik">
+        </div>
+
+        <!-- Halaman Hukum Puasa -->
+        <div id="puasa" class="page">
+            <h2>Hukum Puasa Ramadhan</h2>
+            <p>Puasa wajib bagi muslim yang baligh, berakal, dan sehat. Rukun puasa: niat, menahan diri dari makan/minum, dan berakhir saat maghrib.</p>
+            <p>Manfaat: Mendekatkan diri kepada Allah dan melatih kesabaran.</p>
+            <img src="https://via.placeholder.com/300x200?text=Puasa+Ramadhan" alt="Ilustrasi Puasa" class="gambar-menarik">
+        </div>
+
+        <!-- Halaman Quiz -->
+        <div id="quiz" class="page">
+            <h2>Quiz Fiqih Seru!</h2>
+            <p>Pertanyaan: Berapa rukun shalat?</p>
+            <button onclick="checkAnswer(1)">a) 5</button>
+            <button onclick="checkAnswer(2)">b) 7</button>
+            <button onclick="checkAnswer(3)">c) 10</button>
+            <p id="quiz-result"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dibuat dengan ❤️ untuk siswa MTS. Belajar fiqih yuk!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
